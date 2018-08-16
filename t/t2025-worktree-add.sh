@@ -253,8 +253,8 @@ test_expect_success 'add -B' '
 '
 
 test_expect_success 'add --quiet' '
-	git worktree add --quiet ../foo master >expected 2>&1 &&
-	test_must_be_empty expected
+	git worktree add --quiet another-worktree master 2>actual &&
+	test_must_be_empty actual
 '
 
 test_expect_success 'local clone from linked checkout' '
