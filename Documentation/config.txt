@@ -453,6 +453,8 @@ core.checkStat::
 	and work tree. The user can set this to 'default' or
 	'minimal'. Default (or explicitly 'default'), is to check
 	all fields, including the sub-second part of mtime and ctime.
+	'minimal' only checks size and the whole second part of mtime
+	and ctime.
 
 core.quotePath::
 	Commands that output paths (e.g. 'ls-files', 'diff'), will
